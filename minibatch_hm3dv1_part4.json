@@ -1,0 +1,2005 @@
+{
+  "dataset": "hm3dv1",
+  "episodes": [
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00832-qyAac8rV8Zk/qyAac8rV8Zk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "1"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "2"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "1"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "1"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "1"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "1"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "1"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "1"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00813-svBbv1Pavdk/svBbv1Pavdk.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "1"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "1"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "1"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "2"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "2"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "2"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "1"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "1"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "2"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "2"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "1"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "1"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00802-wcojb4TFT35/wcojb4TFT35.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00848-ziup5kvtCCR/ziup5kvtCCR.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    },
+    {
+      "scene": "hm3d/val/00839-zt1RVoi7PcG/zt1RVoi7PcG.basis.glb",
+      "episode_id": "0"
+    }
+  ]
+}
