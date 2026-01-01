@@ -55,6 +55,8 @@ public:
   double getEarlyTerminateCost();
 
   double lambda_heu_;
+  double lambda_risk_{0.0};
+  inline void setRiskWeight(double w) { lambda_risk_ = w; }
 
 private:
   void backtrack(const Node2DPtr& end_node, const Eigen::Vector2d& end);
@@ -63,6 +65,12 @@ private:
   double getManhHeu(const Eigen::Vector2d& x1, const Eigen::Vector2d& x2);
   double getEuclHeu(const Eigen::Vector2d& x1, const Eigen::Vector2d& x2);
   bool checkPointSafety(const Eigen::Vector2d& pos, int safety_mode);
+  
+  // JPS (Jump Point Search) specific functions
+  Eigen::Vector2i jump(const Eigen::Vector2i& cur, const Eigen::Vector2i& dir,
+      const Eigen::Vector2i& goal, int safety_mode);
+  bool hasForcedNeighbor(const Eigen::Vector2i& cur, const Eigen::Vector2i& dir, int safety_mode);
+  bool isWalkable(const Eigen::Vector2i& idx, int safety_mode);
 
   // main data structure
   std::vector<Node2DPtr> path_node_pool_;

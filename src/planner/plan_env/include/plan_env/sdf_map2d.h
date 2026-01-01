@@ -35,6 +35,7 @@ struct DetectedObject;
 class ObjectMap2D;
 class ValueMap;
 class MapROS;
+class RiskMap2D;
 
 class SDFMap2D {
 public:
@@ -85,6 +86,7 @@ public:
   // Integrated mapping components
   shared_ptr<ObjectMap2D> object_map2d_;
   shared_ptr<ValueMap> value_map_;
+  shared_ptr<RiskMap2D> risk_map_;  ///< Risk map for risk-aware path planning
 
 private:
   // Internal map processing functions

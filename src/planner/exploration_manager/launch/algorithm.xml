@@ -88,6 +88,7 @@
         <!-- path searching -->
         <param name="astar/lambda_heu" value="1.0" type="double"/>
         <param name="astar/resolution_astar" value="0.1" type="double"/>
+        <param name="astar/risk_weight" value="0.4" type="double"/>
     </node>
 
     <!-- ATSP solver -->

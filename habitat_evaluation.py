@@ -75,6 +75,10 @@ from params import HABITAT_STATE, ROS_STATE, ACTION, RESULT_TYPES
 from vlm.Labels import MP3D_ID_TO_NAME
 from vlm.utils.get_itm_message import get_itm_message_cosine
 from vlm.utils.get_object_utils import get_object
+from tools.habitat_eval_utils import (
+    _candidate_scene_ids_from_local,
+    _norm_scene_suffix,
+)
 
 
 def publish_int32(publisher, data):
@@ -233,7 +237,66 @@ def main(cfg: DictConfig) -> None:
 
     env = habitat.Env(cfg)
     print("Environment creation successful")
-    number_of_episodes = env.number_of_episodes
+
+    # 可选：从外部 minibatch JSON 指定要跑的 (scene, episode_id) 列表
+    minibatch_path = getattr(cfg, "minibatch", None)
+    minibatch_items = []
+    minibatch_mode = False
+    if minibatch_path:
+        try:
+            import json as _json
+
+            with open(str(minibatch_path), "r", encoding="utf-8") as f:
+                batch = _json.load(f)
+            eps = list(batch.get("episodes", []))
+            # 规范化字段名
+            for it in eps:
+                sc = str(it.get("scene"))
+                eid = int(it.get("episode_id"))
+                minibatch_items.append({"scene": sc, "episode_id": eid})
+            if len(minibatch_items) > 0:
+                minibatch_mode = True
+        except Exception as e:
+            print(f"[Minibatch] WARN: failed to load minibatch from '{minibatch_path}': {e}")
+            minibatch_items = []
+            minibatch_mode = False
+
+    # minibatch 模式下：为输出目录使用更明确的命名
+    # 期望格式：/home/hdd2/chaiqi/Apexnav/videos/test_{dataset}_{split}_minibatch_{timestamp}
+    # 若提供 cfg.minibatch_output_dir，则优先使用自定义目录（便于断点续跑）。
+    if minibatch_mode:
+        # 可选：外部指定固定输出目录，用于断点续跑
+        try:
+            _mb_outdir = str(getattr(cfg, "minibatch_output_dir", "") or "").strip()
+        except Exception:
+            _mb_outdir = ""
+
+        if _mb_outdir:
+            video_output_path = _mb_outdir
+        else:
+            # 自动根据数据集和 split 生成：test_{dataset}_{split}_minibatch_{timestamp}
+            # dataset 取值：hm3dv1/hm3dv2/mp3d（从 data_path 猜测）
+            try:
+                dp = str(cfg.habitat.dataset.data_path).lower()
+            except Exception:
+                dp = ""
+            if "mp3d" in dp:
+                _ds = "mp3d"
+            elif "/v1/" in dp or "hm3dv1" in dp:
+                _ds = "hm3dv1"
+            else:
+                _ds = "hm3dv2"
+            _split = str(cfg.habitat.dataset.split)
+            ts = time.strftime("%Y%m%d_%H%M%S")
+            video_output_path = f"./videos/test_{_ds}_{_split}_minibatch_{ts}"
+
+        os.makedirs(video_output_path, exist_ok=True)
+        # 重新绑定记录/进度文件路径到新输出根目录
+        record_file_path = os.path.join(video_output_path, cfg.record_file_name)
+        continue_path = os.path.join(video_output_path, cfg.continue_file_name)
+
+    # 设定 episode 总数（若启用 minibatch，则覆盖为列表大小）
+    number_of_episodes = len(minibatch_items) if minibatch_mode else env.number_of_episodes
 
     # Read previous records and set initial values
     (
@@ -245,17 +308,33 @@ def main(cfg: DictConfig) -> None:
         distance_to_goal_reward_all,
         last_time,
     ) = read_record(continue_path, flag_once)
+    # minibatch 默认不继承历史；若设置 cfg.minibatch_resume=true 则读取 continue.txt 继续
+    try:
+        _mb_resume = bool(getattr(cfg, "minibatch_resume", False)) if minibatch_mode else False
+    except Exception:
+        _mb_resume = False
+    if minibatch_mode and not _mb_resume:
+        num_total = 0
+        num_success = 0
+        spl_all = 0.0
+        soft_spl_all = 0.0
+        distance_to_goal_all = 0.0
+        distance_to_goal_reward_all = 0.0
+        last_time = 0.0
 
-    if num_total >= number_of_episodes:
+    # 检查是否已完成所有episode（仅非 minibatch 模式）
+    if not minibatch_mode and num_total >= number_of_episodes:
         raise ValueError("Already finished all episodes.")
 
-    pbar = tqdm.tqdm(total=env.number_of_episodes)
+    pbar = tqdm.tqdm(total=number_of_episodes)
 
-    env_count = num_total if not flag_once else env_num_once
-    while env_count:
-        pbar.update()
-        env.current_episode = next(env.episode_iterator)
-        env_count -= 1
+    # 设置环境计数器（minibatch 模式下跳过前跳逻辑）
+    if not minibatch_mode:
+        env_count = num_total if not flag_once else env_num_once
+        while env_count:
+            pbar.update()
+            env.current_episode = next(env.episode_iterator)
+            env_count -= 1
 
     # Initialize ROS publishers, subscribers, and timers
     obj_point_cloud_pub = rospy.Publisher(
@@ -282,7 +361,46 @@ def main(cfg: DictConfig) -> None:
         # Publish progress information
         publish_int32_array(progress_pub, [num_total, number_of_episodes])
 
-        if flag_once:
+        # 选择 episode：
+        # - minibatch 模式：按列表定位 (scene, episode_id)
+        # - 单次测试模式：按 test_epi_num 偏移
+        if minibatch_mode:
+            try:
+                # 运行 index = num_total（当前已完成后下一个）
+                pick_idx = int(num_total)
+                target = minibatch_items[pick_idx]
+                want_scene_raw = str(target.get("scene"))
+                want_eid = int(target.get("episode_id"))
+                # 生成可能的 scene_id 候选（兼容 hm3d/hm3d_v0.2、绝对/相对路径、缺失前缀等）
+                want_scene_cands = _candidate_scene_ids_from_local(want_scene_raw)
+                # 遍历到指定 episode
+                found = False
+                for ep in env.episode_iterator:
+                    env.current_episode = ep
+                    ep_sid = _norm_scene_suffix(str(ep.scene_id))
+                    if (ep_sid in want_scene_cands) and int(ep.episode_id) == want_eid:
+                        found = True
+                        break
+                if not found:
+                    # 打印更友好的诊断，包括候选匹配
+                    try:
+                        shown = want_scene_cands[0] if len(want_scene_cands) > 0 else want_scene_raw
+                    except Exception:
+                        shown = want_scene_raw
+                    print(
+                        f"[Minibatch] WARN: episode not found: scene={shown}, episode_id={want_eid}; skipping"
+                    )
+                    # 直接跳过，进入下一次循环
+                    num_total += 1
+                    pbar.update()
+                    continue
+            except Exception as e:
+                print(f"[Minibatch] WARN: failed to select episode: {e}; skipping")
+                num_total += 1
+                pbar.update()
+                continue
+        elif flag_once:
+            env_count = env_num_once
             while env_count:
                 env.current_episode = next(env.episode_iterator)
                 env_count -= 1
@@ -551,8 +669,10 @@ def main(cfg: DictConfig) -> None:
         record_data.extend(result_list)
         publish_float32_array(record_pub, record_data)
 
+        # 更新进度条并切换到下一个episode
         pbar.update()
-        env.current_episode = next(env.episode_iterator)
+        if not minibatch_mode:
+            env.current_episode = next(env.episode_iterator)
         rospy.sleep(0.1)  # wait a moment
 
     env.close()

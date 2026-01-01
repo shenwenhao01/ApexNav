@@ -2,9 +2,14 @@ cmake_minimum_required(VERSION 2.8.3)
 project(lkh_mtsp_solver)
 
 set(CMAKE_BUILD_TYPE "Release")
-set(CMAKE_CXX_FLAGS "-std=c++11")
-set(CMAKE_CXX_FLAGS "-O3 -Wall")
+# set(CMAKE_CXX_FLAGS "-std=c++11")
+# set(CMAKE_CXX_FLAGS "-O3 -Wall")
 set(CMAKE_C_FLAGS "-fcommon")
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
 
 find_package(catkin REQUIRED COMPONENTS
   roscpp

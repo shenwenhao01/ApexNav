@@ -26,3 +26,8 @@ habitat-lab
 *.par
 bag
 wandb
+
+*.pt
+*.tar.gz
+.22
+fishros

@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 2.8.3)
 project(exploration_manager)
 
 set(CMAKE_BUILD_TYPE "Release")
-set(CMAKE_CXX_FLAGS "-std=c++11")
-set(CMAKE_CXX_STANDARD 14)
+# set(CMAKE_CXX_FLAGS "-std=c++11")
+# set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall")
 
 find_package(Eigen3 REQUIRED)
@@ -35,6 +35,8 @@ include_directories(
   ${EIGEN3_INCLUDE_DIR}
   ${PCL_INCLUDE_DIRS}
 )
+
+include_directories(/usr/include/ompl-1.5)
 
 add_executable(exploration_node
   src/exploration_node.cpp
