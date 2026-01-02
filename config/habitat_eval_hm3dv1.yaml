@@ -62,6 +62,6 @@ need_video: false
 video_output_path: "videos/test_hm3dv1_{split}"
 test_epi_num: -1
 # Minibatch mode configuration (optional)
-minibatch: null  # Set to JSON file path to enable minibatch mode, e.g., "minibatch.json"
-minibatch_output_dir: ""  # Optional: custom output directory for minibatch runs
-minibatch_resume: false  # Optional: resume from continue.txt in minibatch mode
+# minibatch: null  # Set to JSON file path to enable minibatch mode, e.g., "minibatch.json"
+# minibatch_output_dir: ""  # Optional: custom output directory for minibatch runs
+# minibatch_resume: false  # Optional: resume from continue.txt in minibatch mode

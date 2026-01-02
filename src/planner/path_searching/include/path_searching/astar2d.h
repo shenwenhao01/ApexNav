@@ -55,8 +55,6 @@ public:
   double getEarlyTerminateCost();
 
   double lambda_heu_;
-  double lambda_risk_{0.0};
-  inline void setRiskWeight(double w) { lambda_risk_ = w; }
 
 private:
   void backtrack(const Node2DPtr& end_node, const Eigen::Vector2d& end);
@@ -65,21 +63,29 @@ private:
   double getManhHeu(const Eigen::Vector2d& x1, const Eigen::Vector2d& x2);
   double getEuclHeu(const Eigen::Vector2d& x1, const Eigen::Vector2d& x2);
   bool checkPointSafety(const Eigen::Vector2d& pos, int safety_mode);
-  
-  // JPS (Jump Point Search) specific functions
-  Eigen::Vector2i jump(const Eigen::Vector2i& cur, const Eigen::Vector2i& dir,
-      const Eigen::Vector2i& goal, int safety_mode);
-  bool hasForcedNeighbor(const Eigen::Vector2i& cur, const Eigen::Vector2i& dir, int safety_mode);
-  bool isWalkable(const Eigen::Vector2i& idx, int safety_mode);
+
+  // ARA* specific methods
+  int improvePath(const Eigen::Vector2d& start_pt, const Eigen::Vector2d& end_pt,
+      double success_dist, double max_time, int safety_mode, double epsilon);
+  void computePath(const Eigen::Vector2d& end_pt);
+  void updateVertex(Node2DPtr node, const Eigen::Vector2d& end_pt, double epsilon);
+  Node2DPtr getBestNode();
 
   // main data structure
   std::vector<Node2DPtr> path_node_pool_;
   int use_node_num_, iter_num_;
   std::priority_queue<Node2DPtr, std::vector<Node2DPtr>, NodeComparator2D> open_set_;
   std::unordered_map<Eigen::Vector2i, Node2DPtr, matrix_hash<Eigen::Vector2i>> open_set_map_;
-  std::unordered_map<Eigen::Vector2i, int, matrix_hash<Eigen::Vector2i>> close_set_map_;
+  std::unordered_map<Eigen::Vector2i, Node2DPtr, matrix_hash<Eigen::Vector2i>> close_set_map_;
   std::vector<Eigen::Vector2d> path_nodes_;
   double early_terminate_cost_;
+
+  // ARA* specific data structures
+  std::unordered_map<Eigen::Vector2i, Node2DPtr, matrix_hash<Eigen::Vector2i>> incons_set_;
+  Node2DPtr best_end_node_;
+  double current_epsilon_;
+  double epsilon_decrease_factor_;
+  Eigen::Vector2d current_start_pt_, current_end_pt_;
 
   SDFMap2D::Ptr sdf_map_;
 
