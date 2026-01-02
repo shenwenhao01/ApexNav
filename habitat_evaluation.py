@@ -297,6 +297,17 @@ def main(cfg: DictConfig) -> None:
 
     # 设定 episode 总数（若启用 minibatch，则覆盖为列表大小）
     number_of_episodes = len(minibatch_items) if minibatch_mode else env.number_of_episodes
+    
+    # 在 minibatch 模式下，预先加载所有 episodes 到列表（避免 iterator 被消耗）
+    all_episodes_list = None
+    if minibatch_mode:
+        try:
+            print("[Minibatch] Loading all episodes into memory...")
+            all_episodes_list = list(env.episode_iterator)
+            print(f"[Minibatch] Loaded {len(all_episodes_list)} episodes")
+        except Exception as e:
+            print(f"[Minibatch] WARN: Failed to preload episodes: {e}, will use iterator directly")
+            all_episodes_list = None
 
     # Read previous records and set initial values
     (
@@ -375,11 +386,50 @@ def main(cfg: DictConfig) -> None:
                 want_scene_cands = _candidate_scene_ids_from_local(want_scene_raw)
                 # 遍历到指定 episode
                 found = False
-                for ep in env.episode_iterator:
+                scene_found = False
+                # 提取 scene name 用于匹配（例如从 mp3d/X7HyMhZNoso/X7HyMhZNoso.glb 提取 X7HyMhZNoso）
+                scene_name = None
+                if "/" in want_scene_raw:
+                    parts = want_scene_raw.split("/")
+                    for part in parts:
+                        if part and part != "mp3d" and not part.endswith(".glb"):
+                            scene_name = part
+                            break
+                
+                sample_scene_ids = []  # 收集包含相同 scene name 的实际 scene_id 示例
+                any_scene_ids = []  # 收集任意 scene_id 作为示例
+                episode_count = 0
+                # 在 minibatch 模式下，使用预先加载的 episodes 列表
+                episodes_to_iterate = all_episodes_list if all_episodes_list is not None else env.episode_iterator
+                
+                for ep in episodes_to_iterate:
                     env.current_episode = ep
-                    ep_sid = _norm_scene_suffix(str(ep.scene_id))
-                    if (ep_sid in want_scene_cands) and int(ep.episode_id) == want_eid:
-                        found = True
+                    ep_sid_raw = str(ep.scene_id)  # 原始 scene_id
+                    ep_sid = _norm_scene_suffix(ep_sid_raw)  # 规范化后的 scene_id
+                    episode_count += 1
+                    
+                    # 收集任意 scene_id 作为示例（最多5个，确保能收集到）
+                    if len(any_scene_ids) < 5:
+                        any_scene_ids.append(f"{ep_sid} (raw: {ep_sid_raw})")
+                    # 如果包含相同的 scene name，收集作为示例
+                    if scene_name and scene_name in ep_sid and len(sample_scene_ids) < 5:
+                        sample_scene_ids.append(f"{ep_sid} (raw: {ep_sid_raw})")
+                    
+                    # 同时检查原始和规范化后的 scene_id，以及通过 scene_name 匹配
+                    if ep_sid in want_scene_cands or ep_sid_raw in want_scene_cands:
+                        scene_found = True
+                        if int(ep.episode_id) == want_eid:
+                            found = True
+                            break
+                    # 也尝试通过 scene_name 匹配（更灵活的匹配）
+                    elif scene_name and scene_name in ep_sid:
+                        scene_found = True
+                        if int(ep.episode_id) == want_eid:
+                            found = True
+                            break
+                    
+                    # 如果已经检查了很多 episode 还没找到，提前停止（避免无限循环）
+                    if episode_count > 10000 and not scene_found:
                         break
                 if not found:
                     # 打印更友好的诊断，包括候选匹配
@@ -387,9 +437,22 @@ def main(cfg: DictConfig) -> None:
                         shown = want_scene_cands[0] if len(want_scene_cands) > 0 else want_scene_raw
                     except Exception:
                         shown = want_scene_raw
-                    print(
-                        f"[Minibatch] WARN: episode not found: scene={shown}, episode_id={want_eid}; skipping"
-                    )
+                    if scene_found:
+                        print(
+                            f"[Minibatch] WARN: episode not found: scene={shown}, episode_id={want_eid}; "
+                            f"scene exists but episode_id not found; skipping"
+                        )
+                    else:
+                        msg = f"[Minibatch] WARN: episode not found: scene={shown}, episode_id={want_eid}; "
+                        msg += f"scene not found (tried: {want_scene_cands[:3]})"
+                        if sample_scene_ids:
+                            msg += f"; similar scene_ids: {sample_scene_ids[:3]}"
+                        if any_scene_ids:
+                            msg += f"; sample scene_ids in dataset: {any_scene_ids[:3]}"
+                        if scene_name:
+                            msg += f" (looking for scene_name: {scene_name})"
+                        msg += f" (checked {episode_count} episodes); skipping"
+                        print(msg)
                     # 直接跳过，进入下一次循环
                     num_total += 1
                     pbar.update()

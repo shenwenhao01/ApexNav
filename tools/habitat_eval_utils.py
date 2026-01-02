@@ -137,8 +137,11 @@ def _candidate_scene_ids_from_local(scene_or_file: str) -> list[str]:
     """Return a list of candidate scene_id strings that should match env episodes."""
     s = _norm_scene_suffix(scene_or_file)
     cands: list[str] = []
-    if s:
-        cands.append(s)
+    # Add both original and normalized versions
+    if scene_or_file:
+        cands.append(scene_or_file)  # 原始格式
+    if s and s != scene_or_file:
+        cands.append(s)  # 规范化后的格式
     base = os.path.basename(s)
     stem, ext = os.path.splitext(base)
     if base.lower().endswith(".basis.glb"):
@@ -147,9 +150,39 @@ def _candidate_scene_ids_from_local(scene_or_file: str) -> list[str]:
         stem = stem
     else:
         stem = os.path.splitext(base)[0]
+    
+    # Handle MP3D dataset format: mp3d/X7HyMhZNoso/X7HyMhZNoso.glb
+    if s.startswith("mp3d/") or "mp3d" in s.lower():
+        # Extract scene name from path like mp3d/X7HyMhZNoso/X7HyMhZNoso.glb
+        parts = s.split("/")
+        scene_name = None
+        for part in parts:
+            if part and part != "mp3d" and part != "val" and not part.endswith(".glb") and not part.startswith("data"):
+                scene_name = part
+                break
+        
+        if scene_name:
+            # Add various possible MP3D scene ID formats
+            # Note: _norm_scene_suffix removes /scene_datasets/ prefix, so we generate both formats
+            mp3d_candidates = [
+                s,  # Original format: mp3d/X7HyMhZNoso/X7HyMhZNoso.glb
+                f"mp3d/{scene_name}/{scene_name}.glb",  # Simplified format
+                f"mp3d/val/{scene_name}/{scene_name}.glb",  # With val
+                f"data/scene_datasets/mp3d/{scene_name}/{scene_name}.glb",  # Full path (before normalization)
+                f"scene_datasets/mp3d/{scene_name}/{scene_name}.glb",  # Without data/ prefix
+                # Also add the normalized versions (what _norm_scene_suffix would produce)
+                f"mp3d/{scene_name}/{scene_name}.glb",  # Already added above
+                # Try with different extensions
+                f"mp3d/{scene_name}/{scene_name}.basis.glb",
+            ]
+            for cand in mp3d_candidates:
+                if cand not in cands:
+                    cands.append(cand)
+    
     roots = [
         os.path.join("data", "scene_datasets", "hm3d_v0.2", "val"),
         os.path.join("data", "scene_datasets", "hm3d", "val"),
+        os.path.join("data", "scene_datasets", "mp3d"),
     ]
     for r in roots:
         try:
@@ -158,7 +191,14 @@ def _candidate_scene_ids_from_local(scene_or_file: str) -> list[str]:
             for d in glob.glob(os.path.join(r, f"*-{stem}")):
                 root_name = os.path.basename(os.path.dirname(r))
                 folder = os.path.basename(d)
-                rel = f"{root_name}/val/{folder}/{stem}.basis.glb"
+                if root_name == "scene_datasets":
+                    # For MP3D, the structure might be different
+                    if "mp3d" in r:
+                        rel = f"mp3d/{folder}/{stem}.glb"
+                    else:
+                        rel = f"{root_name}/val/{folder}/{stem}.basis.glb"
+                else:
+                    rel = f"{root_name}/val/{folder}/{stem}.basis.glb"
                 if rel not in cands:
                     cands.append(rel)
         except Exception:
