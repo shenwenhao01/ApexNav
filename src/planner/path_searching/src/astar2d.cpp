@@ -1,4 +1,5 @@
 #include <path_searching/astar2d.h>
+#include <plan_env/risk_map2d.h>
 #include <sstream>
 
 using namespace std;
@@ -14,6 +15,7 @@ void Astar2D::init(ros::NodeHandle& nh, const SDFMap2D::Ptr& sdf_map)
 {
   nh.param("astar/resolution_astar", resolution_, -1.0);
   nh.param("astar/lambda_heu", lambda_heu_, -1.0);
+  nh.param("astar/risk_weight", lambda_risk_, 0.0);
   allocate_num_ = 1000000;
 
   this->sdf_map_ = sdf_map;
@@ -32,7 +34,7 @@ void Astar2D::init(ros::NodeHandle& nh, const SDFMap2D::Ptr& sdf_map)
 
   // ARA* initialization
   best_end_node_ = nullptr;
-  current_epsilon_ = 2.5;  // Initial epsilon for weighted A*
+  current_epsilon_ = 1.5;  // Initial epsilon for weighted A* (lower for better initial search)
   epsilon_decrease_factor_ = 0.5;  // Decrease factor for epsilon
 }
 
@@ -51,7 +53,7 @@ void Astar2D::reset()
   use_node_num_ = 0;
   iter_num_ = 0;
   best_end_node_ = nullptr;
-  current_epsilon_ = 2.5;  // Reset epsilon
+  current_epsilon_ = 1.5;  // Reset epsilon
 }
 
 void Astar2D::setResolution(const double& res)
@@ -69,12 +71,13 @@ int Astar2D::astarSearch(const Eigen::Vector2d& start_pt, const Eigen::Vector2d&
   path_nodes_.clear();
 
   const auto t1 = ros::Time::now();
-  double epsilon = current_epsilon_;
+  double initial_epsilon = current_epsilon_;  // Save initial epsilon
+  double epsilon = initial_epsilon;
 
   // First search: find initial solution
-  // Use most of the time for first search (80%), save rest for improvements
-  double first_search_time = max_time * 0.8;
-  int result = improvePath(start_pt, end_pt, success_dist, first_search_time, safety_mode, epsilon);
+  // Use all available time for first search to maximize success rate
+  // Only improve if we have extra time after finding a solution
+  int result = improvePath(start_pt, end_pt, success_dist, max_time, safety_mode, epsilon, true);
   
   if (result == NO_PATH) {
     // If no path found in first search, check if we have a best node
@@ -85,8 +88,18 @@ int Astar2D::astarSearch(const Eigen::Vector2d& start_pt, const Eigen::Vector2d&
     return NO_PATH;
   }
 
-  // If we found a solution, try to improve it within remaining time limit
+  // If we found a solution, check if we have remaining time for improvements
   double remaining_time = max_time - (ros::Time::now() - t1).toSec();
+  
+  // Only try to improve if we have significant time remaining (at least 10% of total time)
+  if (remaining_time < max_time * 0.1) {
+    // Not enough time for improvements, return the solution we found
+    if (best_end_node_ != nullptr) {
+      computePath(end_pt);
+      return REACH_END;
+    }
+    return NO_PATH;
+  }
   while (remaining_time > 0.001 && epsilon > 1.0 + 1e-6) {
     // Move inconsistent nodes from close set to open set
     for (auto& pair : incons_set_) {
@@ -116,7 +129,8 @@ int Astar2D::astarSearch(const Eigen::Vector2d& start_pt, const Eigen::Vector2d&
     open_set_ = new_open_set;
 
     // Improve path with new epsilon, use all remaining time
-    int improve_result = improvePath(start_pt, end_pt, success_dist, remaining_time, safety_mode, epsilon);
+    // This is improvement phase, not first search
+    int improve_result = improvePath(start_pt, end_pt, success_dist, remaining_time, safety_mode, epsilon, false);
     
     // Update remaining time
     remaining_time = max_time - (ros::Time::now() - t1).toSec();
@@ -146,7 +160,7 @@ int Astar2D::astarSearch(const Eigen::Vector2d& start_pt, const Eigen::Vector2d&
 }
 
 int Astar2D::improvePath(const Eigen::Vector2d& start_pt, const Eigen::Vector2d& end_pt,
-    double success_dist, double max_time, int safety_mode, double epsilon)
+    double success_dist, double max_time, int safety_mode, double epsilon, bool first_search)
 {
   Eigen::Vector2i end_index;
   posToIndex(end_pt, end_index);
@@ -262,9 +276,14 @@ int Astar2D::improvePath(const Eigen::Vector2d& start_pt, const Eigen::Vector2d&
       if (best_end_node_ == nullptr || cur_node->g_score < best_end_node_->g_score) {
         best_end_node_ = cur_node;
       }
+      // In first search, return immediately when finding solution to maximize success rate
+      // In improvement phase, continue searching for better solutions
+      if (first_search) {
+        // First search phase: return immediately when finding solution
+        return REACH_END;
+      }
+      // Improvement phase: continue searching for better solutions
       // Close the goal node, but allow it to be re-opened if we find a better path
-      // This allows ARA* to continue searching for better solutions
-      // Note: cur_node was already popped in the lazy update loop above
       open_set_map_.erase(cur_node->index);
       close_set_map_[cur_node->index] = cur_node;
       iter_num_ += 1;
@@ -314,7 +333,12 @@ int Astar2D::improvePath(const Eigen::Vector2d& start_pt, const Eigen::Vector2d&
       if (close_iter != close_set_map_.end()) {
         // Check if we found a better path to a closed node
         Node2DPtr closed_node = close_iter->second;
-        double new_g = cur_node->g_score + step.norm();
+        double risk = 0.0;
+        if (sdf_map_->risk_map_) {
+          risk = sdf_map_->risk_map_->get(nbr_pos);
+          if (std::isnan(risk) || risk < 0.0) risk = 0.0;
+        }
+        double new_g = cur_node->g_score + step.norm() * (1.0 + lambda_risk_ * risk);
         if (new_g < closed_node->g_score - 1e-6) {
           // Found better path, update the node and mark as inconsistent
           closed_node->g_score = new_g;
@@ -325,7 +349,12 @@ int Astar2D::improvePath(const Eigen::Vector2d& start_pt, const Eigen::Vector2d&
       }
 
       // Update or create neighbor node
-      double tmp_g_score = step.norm() + cur_node->g_score;
+      double risk = 0.0;
+      if (sdf_map_->risk_map_) {
+        risk = sdf_map_->risk_map_->get(nbr_pos);
+        if (std::isnan(risk) || risk < 0.0) risk = 0.0;
+      }
+      double tmp_g_score = cur_node->g_score + step.norm() * (1.0 + lambda_risk_ * risk);
       auto node_iter = open_set_map_.find(nbr_idx);
       
       Node2DPtr neighbor;
